@@ -1,8 +1,8 @@
 require "test_helper"
 
-class Carrierwave::TencentCosTest < Minitest::Test
+class CarrierWave::TencentCosTest < Minitest::Test
   def test_that_it_has_a_version_number
-    refute_nil ::Carrierwave::TencentCos::VERSION
+    refute_nil ::CarrierWave::TencentCos::VERSION
   end
 
   def test_it_does_something_useful

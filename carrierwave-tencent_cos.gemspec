@@ -5,7 +5,7 @@ require "carrierwave/tencent_cos/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "carrierwave-tencent_cos"
-  spec.version       = Carrierwave::TencentCos::VERSION
+  spec.version       = CarrierWave::TencentCos::VERSION
   spec.authors       = ["xia xiongjun"]
   spec.email         = ["xxjapp@gmail.com"]
 

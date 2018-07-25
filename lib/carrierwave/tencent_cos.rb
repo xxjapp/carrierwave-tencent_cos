@@ -1,6 +1,6 @@
 require "carrierwave/tencent_cos/version"
 
-module Carrierwave
+module CarrierWave
   module TencentCos
     # Your code goes here...
   end

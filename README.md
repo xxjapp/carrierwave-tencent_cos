@@ -1,8 +1,6 @@
 # CarrierWave::TencentCos
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/carrierwave/tencent_cos`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem adds storage support for Tencent COS to CarrierWave.
 
 ## Installation
 
@@ -22,7 +20,27 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Configure in `config/initializes/carrierwave.rb`
+
+```ruby
+CarrierWave.configure do |conf|
+    conf.storage        = :tencent_cos  # set as default storage
+    conf.tencent_cos    = {
+        secret_id:      ENV['SECRET_ID_1'],
+        secret_key:     ENV['SECRET_KEY_1'],
+        host:           ENV['HOST_1'],
+        parent_path:    '/app_name_1'
+    }
+end
+```
+
+You can also set the storage to `:tencent_cos` in the specified uploader:
+
+```ruby
+class PictureUploader < CarrierWave::Uploader::Base
+    storage :tencent_cos
+end
+```
 
 ## Development
 
@@ -41,3 +59,9 @@ The gem is available as open source under the terms of the [MIT License](https:/
 ## Code of Conduct
 
 Everyone interacting in the CarrierWave::TencentCos project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/xxjapp/carrierwave-tencent_cos/blob/master/CODE_OF_CONDUCT.md).
+
+## Links
+
+* [ruby gem carrierwave-tencent_cos](https://rubygems.org/gems/carrierwave-tencent_cos)
+* [ruby gem tencent_cos_sdk](https://rubygems.org/gems/tencent_cos_sdk)
+* [carrierwave](https://github.com/carrierwaveuploader/carrierwave)

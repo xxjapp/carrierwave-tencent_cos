@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     carrierwave-tencent_cos (0.1.0)
-      tencent_cos_sdk (~> 0.1)
+      tencent_cos_sdk (~> 0.2)
 
 GEM
   remote: https://rubygems.org/
@@ -23,7 +23,7 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
-    tencent_cos_sdk (0.1.2)
+    tencent_cos_sdk (0.2.0)
       colorize (~> 0.8)
       openssl (~> 2.1)
       rest-client (~> 2.0)

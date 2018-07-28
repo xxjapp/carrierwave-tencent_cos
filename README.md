@@ -62,6 +62,6 @@ Everyone interacting in the CarrierWave::TencentCos project’s codebases, issue
 
 ## Links
 
-* [ruby gem carrierwave-tencent_cos](https://rubygems.org/gems/carrierwave-tencent_cos)
-* [ruby gem tencent_cos_sdk](https://rubygems.org/gems/tencent_cos_sdk)
-* [carrierwave](https://github.com/carrierwaveuploader/carrierwave)
+* [ruby gem carrierwave-tencent_cos](https://github.com/xxjapp/carrierwave-tencent_cos)
+* [ruby gem tencent_cos_sdk](https://github.com/xxjapp/tencent_cos_sdk)
+* [ruby gem carrierwave](https://github.com/carrierwaveuploader/carrierwave)

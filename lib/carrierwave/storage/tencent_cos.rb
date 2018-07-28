@@ -27,7 +27,11 @@ module CarrierWave
                 end
 
                 def store(new_file)
-                    TencentCosSdk.put @path, file: new_file.path
+                    options = { file: new_file.path }
+
+                    options[:log_debug] = !!CarrierWave::Uploader::Base.options[:log_debug]
+
+                    TencentCosSdk.put @path, options
                 end
 
                 def url

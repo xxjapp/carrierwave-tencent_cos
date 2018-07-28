@@ -11,7 +11,15 @@ module CarrierWave
 
   module Uploader
     class Base
+      @options = {}
+
+      def self.options
+        @options
+      end
+
       def self.tencent_cos= options
+        @options = options
+
         TencentCosSdk.configure do |conf|
           conf.secret_id    = options[:secret_id]
           conf.secret_key   = options[:secret_key]

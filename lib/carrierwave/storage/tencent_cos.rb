@@ -10,6 +10,12 @@ module CarrierWave
                 f.store(file)
                 f
             end
+            
+            def cache!(file)
+                f = CarrierWave::Storage::TencentCos::File.new(uploader.store_path)
+                f.store(file)
+                f
+            end
 
             # Load and return a file instance from your engine.
             def retrieve!(identifier)
